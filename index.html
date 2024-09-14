@@ -10,7 +10,7 @@
     <div class="card">
       <div class="search">
         <input type="text" placeholder="enter city name" />
-        <button><img src="./images/search.png" alt="search btn" /></button>
+        <button><img src="./search.png" alt="search btn" /></button>
       </div>
       <div class="error">
         <p>Invaild City Name</p>
@@ -21,14 +21,14 @@
         <h2 class="city">delhi</h2>
         <div class="details">
           <div class="col1">
-            <img src="./images/humidity.png" alt="humidity" />
+            <img src="./humidity.png" alt="humidity" />
             <div>
               <p class="humidity">50%</p>
               <p>Humidity</p>
             </div>
           </div>
           <div class="col1">
-            <img src="./images/wind.png" alt="wind" />
+            <img src="./wind.png" alt="wind" />
             <div>
               <p class="wind">15km/h</p>
               <p>Wind Speed</p>
@@ -70,19 +70,19 @@ if(response.status == 404){
     document.querySelector(".wind").innerHTML=data.wind.speed + "km/h";
 
 if(data.weather[0].main == "Clouds"){
-  wheatherIcon.src="images/clouds.png"
+  wheatherIcon.src="clouds.png"
 
 }else if(data.weather[0].main == "Clear"){
-  wheatherIcon.src="images/clear.png"
+  wheatherIcon.src="clear.png"
 
 }else if(data.weather[0].main == "Rain"){
-  wheatherIcon.src="images/rain.png"
+  wheatherIcon.src="rain.png"
 
 }else if(data.weather[0].main == "Drizzle"){
-  wheatherIcon.src="images/drizle.png"
+  wheatherIcon.src="drizle.png"
 
 }else if(data.weather[0].main == "Mist"){
-  wheatherIcon.src="images/mist.png"
+  wheatherIcon.src="mist.png"
 }
 
 document.querySelector(".wheather").style.display = "block";
